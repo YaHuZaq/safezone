@@ -1,0 +1,1009 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap');
+body
+{
+    font-family: "Fredoka", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000000;
+    color: #dddce7;
+   
+}
+#signup-form{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0px 4px 4px #31c548;;
+    backdrop-filter: blur(1px);
+    padding: 10px 20px;
+    margin-top: 15vh;
+    height: 500px;
+    width: 300px;  
+}
+#signup-form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    gap: 10px;
+}
+#signup-form form h3{
+    text-align: center;
+    font-size: 1em;
+}
+#signup-form form a{
+    font-size: 1em;
+    text-decoration: none;
+    color: #8684c2;
+}
+#signup-form form .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#signup-form form .pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#signup-form form .mael{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Fredoka", sans-serif;
+    width: 250px;
+    height: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+#signup-form form .names{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Fredoka", sans-serif;
+    width: 100px;
+    height: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+#signup-form form .pass .correct{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Fredoka", sans-serif;
+    width: 100px;
+    height: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+#signup-form form  button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-family: "Fredoka", sans-serif;
+    width: 280px;
+    height: 50px;
+    font-weight: 600;
+    background: #31c548;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+#login-form{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0px 4px 4px #31c548;
+    backdrop-filter: blur(3px);
+    padding: 10px 20px;
+    margin-top: 15vh;
+    height: 450px;
+    width: 300px;
+}
+#login-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    gap: 10px;
+}
+#login-form form  #wrt{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Fredoka", sans-serif;
+    width: 250px;
+    height: 25px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+#login-form form .rem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  
+}
+#login-form form .rem a{
+
+    text-decoration: none;
+    color: #272c39;
+}
+#login-form form  button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-family: "Fredoka", sans-serif;
+    width: 280px;
+    height: 50px;
+    font-weight: 600;
+    background: #31c548;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+#loader-container
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background: #272c39;
+    position: fixed;
+    z-index: 1;
+}
+#loader-container .load
+{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+#loader-container img
+{
+  width: 60px;
+  height: 60px;
+  padding: 15px 15px;
+  border-radius: 50px;
+  margin-top: 20%;
+  animation-name: round;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: 5s linear;
+  mix-blend-mode: color-dodge;
+}
+
+@keyframes round{
+    0%{
+        border: 5px solid #dddce7;
+    }
+    50%{
+       background:  #252525;
+    }
+    100%{
+        background: #7269e3;
+        border: 10px solid #a19ec4;
+    }
+}
+#loader-container .load h2
+{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 100px;
+    margin-top: -20px;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+}
+header .logo img{
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+}
+header i{
+    color: #ffffff;
+    font-size: ;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a{
+    color: #a19ec4;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 8px;
+    font-weight: 500;
+}
+header nav #side{
+    display: none;
+}
+header .btns{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 30px;
+}
+header .btns button{
+    font-family: "Fredoka", sans-serif;
+    padding: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+header .btns .clr{
+    background: #98dea3;
+}
+header #bar{
+    display: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:  url('bg1\ \(5\).jpg');
+}
+main .contaner{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+}
+main .contaner h1{
+    color: #d2d2df;
+    font-size: 4vw;
+}
+main .contaner h2{
+    color: #8684c2;
+    font-size: 2.8vw;
+}
+main .contaner h3{
+    color: #575585;
+    font-size: 2.2vw;
+}
+main .buttons{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+main .buttons button{
+    font-family: "Fredoka", sans-serif;
+    padding: 15px 30px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+main .buttons .clr{
+    background: #98dea3;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.about h2{
+    color: #7269e3;
+    font-size: 3vw;
+}
+.about p{
+    color: #cfced8;
+    font-size: 1.7vw;
+    padding: 50px;
+}
+.about .one{
+    display: flex;
+    justify-content: flex-end;
+}
+.about .one button{
+    font-family: "Fredoka", sans-serif;
+    padding: 18px 30px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+   
+    flex-direction: column;
+    gap: 100px;
+}
+.feature .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features .title h2{
+    color: #7269e3;
+    font-size: 3vw;
+}
+.features .title p{
+    color: #cfced8;
+    font-size: 1.5vw;
+   
+}
+.features .logs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.features .logs .inner{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 120px;
+}
+.features .logs .inner .content{
+    background:#a783a6;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-top: -30px;
+    border-radius: 5px;
+    padding: 60px 30px;
+    text-align: center;
+}
+.features .logs #color{
+    background: #394563;
+    box-shadow: 0px 0px 2px #5f5d96;
+    backdrop-filter: blur(20px);
+}
+.features .logs .inner .content .logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+}
+.features .logs .inner .content .logos small{
+    font-size: 1.1vw;
+}
+.features .logs .inner p{
+    color: #252525;
+}
+.features .logs #color p{
+    color: #cfced8;
+}
+.features .logs .inner .content .logos #clr{
+    color: #252525;
+}
+.features .logs .inner .content .logos i{
+    font-size: 3.8vw;
+    
+}
+
+.features .logs .inner .content .dsp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+.features .logs .inner .content .dsp i{
+    font-size: 2.5vw;
+    box-shadow: 0px 0px 5px #5f5d96;
+    border-radius: 50px;
+}
+.feed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.feed form{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.feed form input{
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-family: "Fredoka", sans-serif;
+    width: 300px;
+    height: 35px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.feed form textarea{
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-family: "Fredoka", sans-serif;
+    width: 300px;
+    height: 100px; font-weight: 600;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.feed form button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-family: "Fredoka", sans-serif;
+    width: 360px;
+    background:#7269e3 ;
+    font-weight: 600;
+    height: 50px;
+    font-size: 19px;
+    border: none;
+    outline: none;
+}
+.footer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   gap: 50px;
+}
+.footer .all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    
+}
+.footer .all h2{
+  color: #7269e3;
+  font-size: 3vw;
+}
+.footer .all li{
+    list-style: none;
+    font-size: 1.2vw;
+    margin: 5px;
+}
+.footer .most{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    
+}
+.footer .most .phone{
+    margin: 5px;
+
+}
+.footer .most i{
+    color: #31c548;
+    font-size: 3vw;
+}
+.footer .end{
+    display: flex;
+    justify-content: center;
+    gap: 600px;
+    align-items: center;
+}
+.footer .end .icons{
+    font-size: 2vw;
+    color: #cfced8;
+    margin: 5px;
+}
+
+
+/*Respons1veness*/
+
+@media(max-width:1080px) {
+    header{
+        gap: 70px;
+    }
+    header .btns{
+        margin-left: -100px;
+        gap: 10px;
+    }
+    header nav {
+        margin-left: -40px;
+    }
+   .features .logs .inner{
+    gap: 100px;
+   }
+}
+
+@media(max-width:1000px) {
+   .features .logs .inner{
+    gap: 50px;
+   }
+   .footer .end{
+    gap: 400px;
+   }
+}
+@media(max-width:900px) {
+    .features .logs .inner{
+     gap: 20px;
+    }
+    header{
+        gap: 70px;
+    }
+    header .logo{
+        margin-left: -50px;
+    }
+    header .btns{
+        margin-left: -120px;
+        gap: 10px;
+    }
+    header i{
+        margin-left: -140px;
+    }
+    header nav {
+        margin-left: -120px;
+    }
+    .footer .all ul li{
+        font-size: 1.8vw;
+    }
+    .footer .end{
+        gap: 400px;
+       }
+       .footer .most{
+        gap: 100px;
+       }
+ }
+
+ @media(max-width:830px) {
+    .features{
+        height: 170vh;
+    }
+    .features .logs .inner{
+     flex-direction: column;
+     gap: 70px;
+    }
+}
+@media(max-width:800px) {
+    #loader-container .load h2{
+        font-size: 3vw;
+    }
+    main .contaner h1{
+        font-size: 6vw;
+    }
+    main .contaner h2{
+        font-size: 5vw;
+    }
+    main .contaner h3{
+        font-size: 3vw;
+    }
+    .about h2{
+        font-size: 3.5vw;
+    }
+    .about p{
+        font-size: 2.5vw;
+    }
+    .features{
+        height: 150vh;
+    }
+    .features .title p{
+        font-size: 2.5vw;
+    }
+    .features .logs .inner .content .logos small{
+        font-size: 2.2vw;
+    }
+    .features .logs .inner{
+     flex-direction: column;
+     gap: 70px;
+    }
+    .feed form input{
+        width: 250px;
+        padding: 8px 15px;
+    }
+    .feed form textarea{
+        width: 250px;
+        padding: 8px 15px;
+    }
+    .feed form button{
+        width: 280px;
+        padding: 8px 10px;
+    }
+}
+@media(max-width:750px){
+    .about button{
+        font-size: 2px;
+        padding: 50px;
+        width: 200px;
+        height: 60px;
+    }
+    .features .logs .inner .content .dsp i{
+        font-size: 5.2vw;
+    }
+    .footer .all ul li{
+        font-size: 1.8vw;
+    }
+    .footer .all{
+        gap: 100px;
+       }
+    .footer .end{
+        gap: 300px;
+       }
+       .footer .end i{
+         font-size: 2.8vw;
+       }
+       .footer .most{
+        gap: 60px;
+       }
+}
+
+@media(max-width:650px){
+    header{
+        margin-top: -20px;
+    }
+    header .logo img{
+        border-radius: 50px;
+        height: 75px;
+        position: relative;
+        width: 75px;
+    }
+  header  nav{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        box-shadow: 0px 4px 4px #31c548;
+        border-radius: 5px;
+        margin-top: 500px;
+        margin-left: -30px;
+        width: 65%;
+        height: 40vh;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        padding: 20px auto;
+    }
+    header nav a{
+        color: #fffdfd;
+        margin: 10px;
+    }
+    header nav #side{
+    display: block;
+    color: #31c548;
+    position: absolute;
+    top: 0;
+    font-size: 7vw;
+   
+}
+    header i{
+        font-size: 4vw;
+    }
+    header #bar{
+        display:block;
+        font-size: 5vw;
+    }
+    .footer .all h2{
+        font-size: 4vw;
+    }
+    .footer .all ul li{
+        font-size: 2vw;
+    }
+    .footer{
+        gap: 100px;
+    }
+    .footer .all{
+        gap: 50px;
+       }
+    .footer .end{
+        gap: 150px;
+       }
+       .footer .end i{
+         font-size: 4vw;
+       }
+       .footer .most{
+        gap: 15px;
+       }
+}
+
+@media(max-width:500px){
+    header  nav{
+          flex-direction: column;
+          display: none;
+          position: absolute;
+          background: transparent;
+          backdrop-filter: blur(20px);
+          box-shadow: 0px 4px 4px #31c548;
+          border-radius: 5px;
+          margin-top: 500px;
+          margin-left: -30px;
+          width: 65%;
+          height: 40vh;
+          padding-top: 70px;
+          padding-bottom: 30px;
+          padding: 20px auto;
+      }
+      header nav a{
+          color: #fffdfd;
+          margin: 10px;
+      }
+      header nav #side{
+      display: block;
+      color: #31c548;
+      position: absolute;
+      top: 0;
+      font-size: 7vw;
+     
+  }
+      header i{
+          font-size: 4vw;
+      }
+      header #bar{
+          display:block;
+          font-size: 5vw;
+      }
+      header .btns{
+        gap: 10px;
+      }
+      header .btns button{
+        width: 80px;
+        padding: 5px 5px;
+        height: 35px;
+        gap: 1px;
+        font-size: 13px;
+      }
+      main .contaner h3{
+        font-size: 4vw;
+        color: #98dea3;
+      }
+      main .buttons button{
+        width: 100px;
+        padding: 5px 5px;
+        height: 45px;
+        gap: 1px;
+        font-size: 15px;
+      }
+      .about h2{
+        font-size: 6vw;
+      }
+      .about p{
+        font-size: 4vw;
+      }
+      .about .one button{
+        width: 120px;
+        padding: 5px 5px;
+        height: 50px;
+        gap: 1px;
+        font-size: 15px;
+      }
+      .features .title h2{
+        font-size: 6vw;
+     }
+      .features .title p{
+         font-size: 3.4vw;
+      }
+      .features .logs .inner .content .logos small{
+        font-size: 4.2vw;
+    }
+    .features .logs .inner .content .logos i{
+        font-size: 8.2vw;
+    }
+    .feed form{
+        gap: 30px;
+    }
+    .feed form input{
+        width: 200px;
+        padding: 8px 15px;
+    }
+    .feed form textarea{
+        width: 200px;
+        padding: 8px 15px;
+    }
+    .feed form button{
+        width: 230px;
+        padding: 8px 10px;
+    }
+      .footer .all h2{
+          font-size: 6vw;
+      }
+      .footer .all ul li{
+          font-size: 3vw;
+      }
+      .footer{
+          margin: 5px;
+          display: block;
+      }
+      .footer .all{
+        display: block;
+       }
+      
+      .footer .end{
+          gap: 150px;
+          display: block;
+          text-align: center;
+         }
+         .footer .end i{
+           font-size: 6vw;
+         }
+         .footer .most{
+          margin: 55px;
+          display: block;
+         }
+         .footer .most i{
+            font-size: 6vw;
+          }
+
+
+          #signup-form{
+            position: fixed;
+            display: none;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            background: #d3d0d0;
+            align-items: center;
+            background-color: transparent;
+            box-shadow: 0px 4px 4px #31c548;;
+            padding: 10px 20px;
+            margin-top: 15vh;
+            height: 500px;
+            width: 200px;  
+            padding-bottom: 30px;
+        }
+        #signup-form form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            gap: 20px;
+        }
+        #signup-form form .user{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #signup-form form .pass{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        #signup-form form .mael{
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: "Fredoka", sans-serif;
+            width: 160px;
+            height: 20px;
+            font-weight: 600;
+            font-size: 15px;
+            border: none;
+            outline: none;
+        }
+        #signup-form form .names{
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: "Fredoka", sans-serif;
+            width: 160px;
+            height: 20px;
+            font-weight: 600;
+            font-size: 15px;
+            border: none;
+            outline: none;
+        }
+        #signup-form form .pass .correct{
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: "Fredoka", sans-serif;
+            width: 160px;
+            height: 20px;
+            font-weight: 600;
+            font-size: 15px;
+            border: none;
+            outline: none;
+        }
+        #signup-form form  button{
+            padding: 10px 30px;
+            border-radius: 5px;
+            font-family: "Fredoka", sans-serif;
+            width: 200px;
+            height: 50px;
+            font-weight: 600;
+            background: #31c548;
+            font-size: 13px;
+            border: none;
+            outline: none;
+        }
+        
+        #login-form{
+            position: fixed;
+            display: none;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            background-color: transparent;
+            box-shadow: 0px 4px 4px #31c548;
+            padding: 10px 20px;
+            margin-top: 15vh;
+            height: 450px;
+            width: 200px;
+        }
+        #login-form form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            gap: 20px;
+        }
+        #login-form form  #wrt{
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-family: "Fredoka", sans-serif;
+            width: 160px;
+            height: 20px;
+            font-weight: 600;
+            font-size: 15px;
+            border: none;
+            outline: none;
+        }
+        #login-form form .rem{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;  
+        }
+        #login-form form .rem a{
+            text-decoration: none;
+            color: #acbbe0;
+            font-size: 3vw;
+        }
+        #login-form form .rem label{
+            font-size: 3vw;
+        }
+        #login-form form  button{
+            padding: 10px 30px;
+            border-radius: 5px;
+            font-family: "Fredoka", sans-serif;
+            width: 200px;
+            height: 50px;
+            font-weight: 600;
+            background: #31c548;
+            font-size: 13px;
+            border: none;
+            outline: none;
+        }
+  }

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe zone</title>
+    <link rel="icon" type="png" href="bg1 (8).jpg">
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+   
+    <div id="loader-container">
+       <div class="load">
+        <img src="bg1 (7).jpg" alt="">
+        <h2>loading...</h2>
+       </div>
+    </div>
+     <header>
+        <div class="logo">
+            <img src="bg1 (7).jpg" alt="logo" width="30px">
+        </div>
+
+        <i class="ri-search-line" id="searc"></i>
+
+       <nav id="nav">
+        <i class="ri-close-circle-line" id="side" onclick="hiSing()"></i>
+         <a href="">About</a>
+         <a href="">Features</a>
+         <a href="">Download</a>
+         <a href="">Design</a>
+       </nav>
+
+       <div class="btns">
+         <button class="clr" onclick="showSign()">Signup</button>
+         <button onclick="seeLog()">Login</button>
+       </div>
+
+
+       <i class="ri-menu-line" id="bar" onclick="navs()"></i>
+     </header>
+
+
+     <main>
+        <div id="login-form">
+            <i class="ri-close-large-line" style="position: absolute; color: #31c548; right: 0; top: 0; padding: 20px; font-size: 1.7rem;" onclick="hideLog()"></i>
+            <form action="">
+                <input type="email" id="wrt" placeholder="Email">
+                <input type="password" id="wrt" placeholder="Password">
+                <div class="rem">
+                    <a href="">Forgot password</a>
+                    <input type="checkbox" value="remember me" id="">
+                    <label for="checkbox" style="color: aliceblue;">
+                      Remember me
+                    </label>
+                </div>
+                <button>Login</button>
+                <h3>Dont have an account</h3>
+                <a href="" style="font-size: 1.3vw; text-decoration: none; color: #eee;">Signup</a>
+            </form>
+    
+        </div>
+        <div id="signup-form">
+          <i class="ri-close-large-line" style="position: absolute; color: #31c548; right: 0; top: -50px; padding: 20px; font-size: 1.7rem;" class="cancel" onclick="hideSign()"></i>
+          <form action="">
+            <div class="user">
+              <input type="text" placeholder="First Name" class="names">
+              <input type="text" placeholder="Other Name" class="names">
+            </div>
+            <input type="email" placeholder="example@gmail.com" class="mael">
+            <input type="tel" placeholder="+234 813562674"  class="mael">
+            <div class="pass">
+              <input type="text" placeholder="Password" class="correct">
+              <input type="text" placeholder="Comfirm Pass." class="correct">
+            </div>
+            <button><a href="dashboard.html" onclick="next()">Register</a></button>
+            <h3>Already have an account</h3>
+             <a href="">Login</a>
+          </form>
+        </div>
+        <div class="contaner">
+          <h1>SafeZone</h1>
+            <h2>Protect and Hide your Privacy</h3>
+            <h3>The ultimate all in one app for you</h3>
+            <div class="buttons">
+                <button onclick="showSign()">Register</button>
+                <button class="clr">Learn More</button>
+            </div>
+        </div>
+     </main>
+
+     <div class="about">
+        <h2>About SafeZone</h2>
+        <p>Safezone is an instant app design to provide and efficient soluton toward
+          your problems, Where user user is able to create note save important note as well 
+          hide some contents whether you are new to note app or else safezone provide visual appealing
+          User inteface and User experience for you. Just download app below 
+        </p>
+     <div class="one">
+        <button class="stubborn">Download</button>
+     </div>
+     </div>
+
+     <div class="features">
+       <div class="title">
+        <h2>Features</h2>
+        <p>Check the Features of our app and Signup to enjoy</p>
+       </div>
+
+       <div class="logs">
+           <div class="inner">
+             <div class="content">
+               <div class="logos">
+                <i class="ri-article-line" id="clr"></i>
+                <small>Create Note</small>
+               </div>
+                <p>Create and save your note or later use</p>
+                <div class="dsp">
+                    <b>Notes</b>
+                      <i class="ri-add-circle-fill" onclick="showSign();"></i>
+                </div>
+             </div>
+
+             <div class="content">
+                <div class="logos">
+                    <i class="ri-image-fill" id="clr"></i>
+                    <small>Media</small>
+                   </div>
+                    <p>Hide your media iles and access them anytime</p>
+                  <div class="dsp">
+                    <b>Hide files</b>
+                    <i class="ri-add-circle-fill" onclick="showSign();"></i>
+                  </div>
+             </div>
+
+             <div class="content"  id="color">
+                <div class="logos">
+                    <i class="ri-save-fill"></i>
+                    <small>Info</small>
+                   </div>
+                    <p>Hide your Important document here in case of loss</p>
+                    <div class="dsp">
+                      <b>Saved your Info</b>
+                      <i class="ri-add-circle-fill" onclick="showSign();"></i>
+                    </div>
+             </div>
+           </div>
+       </div>
+     </div>
+
+
+     <div class="feed">
+        <h2>Contact</h2>
+        <form action="">
+            <input type="text" name="" placeholder="Name">
+            <input type="text" name="" placeholder="Emal">
+            <textarea name="" placeholder="Message"></textarea>
+            <button>Submit</button>
+        </form>
+     </div>
+
+     <div class="footer">
+       <div class="all">
+        <div class="one">
+            <ul>
+                <h2>Links</h2>
+                <li>About</li>
+                <li>Features</li>
+                <li>Download</li>
+                <li>Design</li>
+            </ul>
+           </div>
+    
+           <div class="two">
+             <ul>
+                <h2>Actions</h2>
+                <li>Saved Note</li>
+                <li>Strong Password</li>
+                <li>Hidden files</li>
+                <li>Info</li>
+             </ul>
+           </div>
+
+           <div class="tree">
+            <ul>
+               <h2>Help</h2>
+               <li>Do you have a pro subscription?</li>
+               <li>Can i reset my password?</li>
+               <li>Is it neccessary to create account before i use app?</li>
+               <li>How to delete unuse account?</li>
+            </ul>
+          </div>
+       </div>
+
+       <div class="most">
+          <div class="phone">
+            <i class="ri-phone-fill" ></i>
+            +234 813562674
+          </div>
+
+          <div class="phone">
+            <i class="ri-map-pin-line"></i>
+            Group-E. Flowdiary
+          </div>
+
+          <div class="phone">
+            <i class="ri-mail-line"></i>
+            Send us an Email
+          </div>
+       </div>
+
+       <div class="end">
+          <div class="icons">
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-twitter-x-line"></i>
+            <i class="ri-instagram-line"></i>
+            <i class="ri-whatsapp-fill"></i>
+          </div>
+
+          <div class="footer-text">
+            <h3>  © 2024 Group-E. Flowdiary</h3>
+          </div>
+       </div>
+     </div>
+
+    <script src="text.js"></script>
+</body>
+</html>
