@@ -674,6 +674,7 @@ main .buttons .clr{
         height: 30px;
         position: relative;
         width: 30px;
+        mix-blend-mode: multiply;
     }
   header  nav{
         flex-direction: column;
