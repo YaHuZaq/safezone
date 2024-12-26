@@ -212,7 +212,6 @@ header{
     align-items: center;
     padding: 20px;
     gap: 100px;
-    margin-top: -20px;
     background: transparent;
     position: fixed;
     width: 100%;
@@ -669,9 +668,7 @@ main .buttons .clr{
 }
 
 @media(max-width:650px){
-    header{
-        margin-top: -20px;
-    }
+
     header .logo img{
         border-radius: 50px;
         height: 75px;
